@@ -7,5 +7,6 @@ dependencies = [
     "numpy",
     "pillow",
     "streamlit",
+    "streamlit-drawable-canvas-fix>=0.9.8",
     "tensorflow",
 ]
