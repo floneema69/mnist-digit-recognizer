@@ -3,16 +3,16 @@ revision = 3
 requires-python = ">=3.12"
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform == 'win32'",
     "python_full_version >= '3.15' and sys_platform == 'emscripten'",
-    "python_full_version == '3.14.*' and sys_platform == 'emscripten'",
     "python_full_version >= '3.15' and sys_platform != 'emscripten' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform == 'win32'",
+    "python_full_version == '3.14.*' and sys_platform == 'emscripten'",
     "python_full_version == '3.14.*' and sys_platform != 'emscripten' and sys_platform != 'win32'",
     "python_full_version == '3.13.*' and sys_platform == 'win32'",
-    "python_full_version < '3.13' and sys_platform == 'win32'",
     "python_full_version == '3.13.*' and sys_platform == 'emscripten'",
-    "python_full_version < '3.13' and sys_platform == 'emscripten'",
     "python_full_version == '3.13.*' and sys_platform != 'emscripten' and sys_platform != 'win32'",
+    "python_full_version < '3.13' and sys_platform == 'win32'",
+    "python_full_version < '3.13' and sys_platform == 'emscripten'",
     "python_full_version < '3.13' and sys_platform != 'emscripten' and sys_platform != 'win32'",
 ]
 
@@ -597,6 +597,7 @@ dependencies = [
     { name = "numpy" },
     { name = "pillow" },
     { name = "streamlit" },
+    { name = "streamlit-drawable-canvas-fix" },
     { name = "tensorflow" },
 ]
 
@@ -605,6 +606,7 @@ requires-dist = [
     { name = "numpy" },
     { name = "pillow" },
     { name = "streamlit" },
+    { name = "streamlit-drawable-canvas-fix", specifier = ">=0.9.8" },
     { name = "tensorflow" },
 ]
 
@@ -1239,6 +1241,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/ce/98/399d9b5bea64f0db9a37a800e420ba563dcde293e91d244c7d96acaeb313/streamlit-1.64.0.tar.gz", hash = "sha256:5c3f9a9dec13b5c5197a9c764ebf1a9d77f9e19c1b4af008779cb45c368961a3", size = 9535360, upload-time = "2026-09-15T19:13:53.576Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d7/8e/e635448a7fd6d92211d4ff2150356b8dffd3fcdc05c00511c61110078871/streamlit-1.64.0-py3-none-any.whl", hash = "sha256:4daf63aa9eaa5452d0edc64a5bdb0c4ad25580fe3c62c270455f3c43e9db5098", size = 10093987, upload-time = "2026-09-15T19:13:51.284Z" },
+]
+
+[[package]]
+name = "streamlit-drawable-canvas-fix"
+version = "0.9.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "pillow" },
+    { name = "streamlit" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/cb/7c/f7d1823c4ad01d4ba1bff2651ea2468a934997fed5d5f7819f7119ab4382/streamlit_drawable_canvas_fix-0.9.8.tar.gz", hash = "sha256:7bda602983ee6e74365e70714dac23e0c3334f9f066455ff3eb949916a175078", size = 1158729, upload-time = "2025-11-19T10:46:06.727Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5b/0c/1d52e24668579e45195125f1c302680f64ce9087ee55dbe5984c63641f8c/streamlit_drawable_canvas_fix-0.9.8-py3-none-any.whl", hash = "sha256:99f3664a29adbf68c41dbb45c3bddd074c91c7a3e6f4af95e880031422b40ca0", size = 1169376, upload-time = "2025-11-19T10:45:59.045Z" },
 ]
 
 [[package]]
