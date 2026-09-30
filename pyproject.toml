@@ -1,0 +1,11 @@
+[project]
+name = "mnist-digit-recognizer"
+version = "0.1.0"
+description = "Handwritten digit recognition (MNIST) with TensorFlow and Streamlit"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "pillow",
+    "streamlit",
+    "tensorflow",
+]
